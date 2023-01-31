@@ -137,7 +137,7 @@ height: 100px;
       flex-direction: column;
       animation: slideup .5s ease;
       a{
-        /* border-bottom: 2px solid #4597b0; */
+        
         border-radius: 5px;
       }
       a:hover{
