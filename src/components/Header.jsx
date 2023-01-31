@@ -11,7 +11,7 @@ function Header() {
         <h1>Pedaleo</h1>
         <ul className='menu'>
           <li className='quienes'>
-            <a href='/' className='mainAnchors'>{`¿Quiénes somos? >`}</a>
+            <a href='/' className='mainAnchors'>{`¿Quiénes somos? ˅`}</a>
             <ul className='quienes_hidden'>
               <li>
               <Link to={"/metodologia"}>Metodologia</Link>
@@ -23,7 +23,7 @@ function Header() {
           </li>
         
           <li className='ofrecemos'>
-            <a href='/' className='mainAnchors'>{`¿Qué ofrecemos? >`}</a>
+            <a href='/' className='mainAnchors'>{`¿Qué ofrecemos? ˅`}</a>
             <ul className='ofrecemos_hidden'>
               <li>
                 <Link to={"/servicios"}>Servicios</Link>
@@ -63,13 +63,14 @@ const Container = styled.div`
   }
   background: rgb(107,229,255);
 background: linear-gradient(180deg, rgba(107,229,255,1) 0%, rgba(150,247,255,0.48503151260504207) 52%, #fff5ce 100%);
-height: 100px;
+height: 140px;
   .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     h1{
       margin-left: 20px;
+      font-size: 50px;
     }
   }
     ul{
@@ -96,6 +97,9 @@ height: 100px;
     .menu li{
       position: relative;
     }
+    .mainAnchors{
+      font-weight:bold;
+    }
     .mainAnchors:hover{
       border-bottom: 1px solid #4ab5e7b1;
       color: #3496c0;
@@ -106,7 +110,7 @@ height: 100px;
       display: none;
       padding: 0;
       width: 230px;
-      border-radius: 5px;
+      border-radius: 0px 0px 5px 5px;
       border-left: 1px solid #4597b0;
       border-right: 1px solid #4597b0;
       border-bottom: 1px solid #4597b0;
@@ -121,7 +125,7 @@ height: 100px;
       animation: slideup .5s ease;
       a{
         /* border-bottom: 2px solid #4597b0; */
-        border-radius: 5px;
+        border-radius: 0px;
       }
       a:hover{
       background-color: #4ab5e77b;
@@ -138,7 +142,7 @@ height: 100px;
       animation: slideup .5s ease;
       a{
         
-        border-radius: 5px;
+        border-radius: 0px;
       }
       a:hover{
       background-color: #4ab5e77b;
