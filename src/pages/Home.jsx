@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import AOS from 'aos';
+import {Link} from 'react-router-dom'
 import 'aos/dist/aos.css';
 AOS.init();
 
@@ -12,6 +13,7 @@ function Home() {
           <h1 data-aos="fade-right" data-aos-duration="1500">Frase con gancho</h1>
           <p data-aos="fade-left" data-aos-duration="1500">Pedaleo un centro socioeducativo de reciente formación que busca modernizar la educación y la enseñanza, para así adaptarlas a disposición de cada alumno. Entendemos que el proceso de aprendizaje puede variar en cada situación personal y queremos conseguir que en cada una de estas, nuestros clientes disfruten de dicho proceso.</p>
         </div>
+        <Link className='quienesButton' to={'/quienes-somos'}>Conoce más</Link>
         <div className='backHome'>
 
         </div>
@@ -64,6 +66,24 @@ box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
 -moz-box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
 box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
       }
+    }
+    .quienesButton{
+      position: absolute;
+      z-index: 1;
+      top: 65%;
+      text-decoration: none;
+      color: black;
+      padding: 10px;
+      background: #e3e30f;
+      border-radius: 10px;
+      left: 40%;
+      width: 20%;
+      -webkit-transition: border .5s ease;
+    }
+    .quienesButton:hover{
+      border: 4px solid #ffff71;
+      transition: .2s ease;
+      color: #5e5713;
     }
   }
   .backHome{
