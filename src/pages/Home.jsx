@@ -1,9 +1,85 @@
 import React from 'react'
+import styled from 'styled-components';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 function Home() {
   return (
-    <div>Home</div>
+    <Container>
+      <div className='imageContainer'>
+        <div className='imageText'>
+          <h1 data-aos="fade-right" data-aos-duration="1500">Frase con gancho</h1>
+          <p data-aos="fade-left" data-aos-duration="1500">Pedaleo un centro socioeducativo de reciente formación que busca modernizar la educación y la enseñanza, para así adaptarlas a disposición de cada alumno. Entendemos que el proceso de aprendizaje puede variar en cada situación personal y queremos conseguir que en cada una de estas, nuestros clientes disfruten de dicho proceso.</p>
+        </div>
+        <div className='backHome'>
+
+        </div>
+      </div>
+      
+    </Container>
   )
 }
+
+const Container = styled.div`
+ 
+  h1{
+    margin: 0;
+  }
+  .imageContainer{
+    top: 150px;
+    position: relative;
+    height: 60vh;
+    width: 1850px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 20px;
+    .imageText{
+      /* display: flex;
+      flex-direction: column; */
+      position: absolute;
+      z-index: 1;
+      left: 10%;
+      top: 25%;
+      padding: 30px;
+      width: 50%;
+      margin: auto;
+     
+      p{
+        text-align: start;
+        background: #fff8b1a1;
+        padding: 20px;
+        border-radius: 20px;
+        -webkit-box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
+-moz-box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
+box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
+      }
+      h1{
+       text-align: start;
+       background: #fff8b1a8;
+        padding: 20px;
+        border-radius: 20px;
+        width: 28%;
+        -webkit-box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
+-moz-box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
+box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
+      }
+    }
+  }
+  .backHome{
+    opacity: 90%;
+    background-image: url('https://conncan.org/wp-content/uploads/sites/16/2016/04/iStock-858667816.jpg');
+    height: 105%;
+    background-size: cover;
+    object-fit: cover;
+    width: 105%;
+    background-position: center;
+    background-attachment: fixed;
+    margin: -5px;
+    filter: blur(4px);
+  }
+  
+
+`
 
 export default Home

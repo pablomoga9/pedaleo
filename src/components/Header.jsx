@@ -1,23 +1,23 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
-
+import logo from '../assets/PandaGabri.png'
 
 function Header() {
   return (
     <>
         <Container>
         <div className='nav'>
-        <h1>Pedaleo</h1>
+        <Link to={'/'}><img className='logo' src={logo} alt="" /></Link>
         <ul className='menu'>
           <li className='quienes'>
             <a href='/' className='mainAnchors'>{`¿Quiénes somos? ˅`}</a>
             <ul className='quienes_hidden'>
               <li>
-              <Link to={"/metodologia"}>Metodologia</Link>
+              <Link to={"/nuestro-equipo"}>Nuestro equipo</Link>
               </li>
               <li>
-              <Link to={"/nuestro-equipo"}>Nuestro equipo</Link>
+              <Link to={"/metodologia"}>Metodología</Link>
               </li>
             </ul>
           </li>
@@ -64,6 +64,12 @@ const Container = styled.div`
   background: rgb(107,229,255);
 background: linear-gradient(180deg, rgba(107,229,255,1) 0%, rgba(150,247,255,0.48503151260504207) 52%, #fff5ce 100%);
 height: 140px;
+
+  .logo{
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: 30px;
+  }
   .nav{
     display: flex;
     justify-content: space-between;
