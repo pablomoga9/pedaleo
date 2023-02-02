@@ -35,7 +35,7 @@ const Container = styled.div`
   
  
     background: rgb(255,245,206);
-background: linear-gradient(180deg, rgba(255,245,206,1) 0%, rgba(244,228,255,0.48503151260504207) 52%, rgba(247,193,255,0.46262254901960786) 100%);
+background: linear-gradient(180deg, rgba(255,245,206,1) 0%, rgba(244,228,255,0.48503151260504207) 52%, #3835e676 100%);
   height: 3000px;
 `
 

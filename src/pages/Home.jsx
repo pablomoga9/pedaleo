@@ -41,8 +41,8 @@ function Home() {
 
         </div>
       </div>
-      <div className='whereToFind'>
-        <h1>Dónde encontrarnos</h1>
+      <div data-aos="fade-right" data-aos-duration="1500" className='whereToFind'>
+        <h1>DÓNDE ENCONTRARNOS</h1>
         <div className='whereContainer'>
           <MapContainer style={{ width: '60%', height: '500px' }} center={[37.37181697142589, -5.958355046060471]} zoom={15} scrollWheelZoom={false}>
             <TileLayer
@@ -90,7 +90,7 @@ const Container = styled.div`
     margin-bottom: 200px;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    /* gap: 100px; */
   }
 
   h1{
@@ -168,21 +168,43 @@ box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
     filter: blur(4px);
   }
 
+  .whereToFind{
+    h1{
+      color: #56beff;
+      padding: 20px 20px 50px;
+      width: 30%;
+      margin: auto;
+      border-style: dashed solid;
+      border-bottom-style: none;
+      border-color: #00a2ff;
+      margin-bottom: 0;
+    }
+  }
+
   .whereContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
     margin: auto;
-    background: #ffff605c;
+    background: #60e2ff5c;
+    border: 3px solid #00a2ff;
     padding: 30px;
     border-radius: 20px;
+    margin-top: 0;
+    margin-bottom: 50px;
     .whereText{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-right: 140px;
+      margin-right: 115px;
+      p{
+        font-size: 20px;
+      }
+      b{
+        font-size: 25px;
+      }
     }
   }
   
