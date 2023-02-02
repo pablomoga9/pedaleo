@@ -11,7 +11,7 @@ function Header() {
         <Link to={'/'}><img className='logo' src={logo} alt="" /></Link>
         <ul className='menu'>
           <li className='quienes'>
-            <a href='/' className='mainAnchors'>{`¿Quiénes somos? ˅`}</a>
+            <Link to={'/quienes-somos'} className='mainAnchors'>{`¿Quiénes somos? ˅`}</Link>
             <ul className='quienes_hidden'>
               <li>
               <Link to={"/nuestro-equipo"}>Nuestro equipo</Link>
@@ -23,7 +23,7 @@ function Header() {
           </li>
         
           <li className='ofrecemos'>
-            <a href='/' className='mainAnchors'>{`¿Qué ofrecemos? ˅`}</a>
+            <Link to={'que-ofrecemos'} className='mainAnchors'>{`¿Qué ofrecemos? ˅`}</Link>
             <ul className='ofrecemos_hidden'>
               <li>
                 <Link to={"/servicios"}>Servicios</Link>

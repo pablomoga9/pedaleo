@@ -9,6 +9,8 @@ import Matinal from './Matinal';
 import Precios from './Precios';
 import Servicios from './Servicios';
 import Summer from './Summer';
+import Quienes from './Quienes'
+import Que from './Que'
 import styled from 'styled-components';
 
 function Main() {
@@ -25,6 +27,8 @@ function Main() {
         <Route element={<Servicios/>} path={"/servicios"}/>
         <Route element={<Precios/>} path={"/tarifas-y-precios"}/>
         <Route element={<Matinal/>} path={"/aula-matinal"}/>
+        <Route element={<Quienes/>} path={"/quienes-somos"}/>
+        <Route element={<Que/>} path={"/que-ofrecemos"}/>
       </Routes>
     </main>
    </Container>
@@ -36,7 +40,8 @@ const Container = styled.div`
  
     background: rgb(255,245,206);
 background: linear-gradient(180deg, rgba(255,245,206,1) 0%, rgba(244,228,255,0.48503151260504207) 52%, #3835e676 100%);
-  height: 3000px;
+  /* height: 3000px; */
+  padding-bottom: 80px;
 `
 
 export default Main
