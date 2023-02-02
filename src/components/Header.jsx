@@ -60,6 +60,7 @@ const Container = styled.div`
   position: sticky;
   top: 0;
   z-index: 2;
+  
   html, body{
   margin: 0;
   padding: 0;

@@ -133,7 +133,7 @@ const Container = styled.div`
     margin: 0;
   }
   .imageContainer{
-    top: 150px;
+    top: 0px;
     position: relative;
     height: 60vh;
     width: 1850px;

@@ -42,6 +42,7 @@ const Container = styled.div`
 background: linear-gradient(180deg, rgba(255,245,206,1) 0%, rgba(244,228,255,0.48503151260504207) 52%, #3835e676 100%);
   /* height: 3000px; */
   padding-bottom: 80px;
+  padding-top: 150px;
 `
 
 export default Main
