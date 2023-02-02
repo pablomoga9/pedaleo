@@ -31,7 +31,7 @@ function Home() {
     <Container>
       <div className='imageContainer'>
         <div className='imageText'>
-          <h1 data-aos="fade-right" data-aos-duration="1500">Frase con gancho</h1>
+          <h1 data-aos="fade-right" data-aos-duration="1500">¿Pedaleamos juntos?</h1>
           <p data-aos="fade-left" data-aos-duration="1500">Pedaleo un centro socioeducativo de reciente formación que busca modernizar la educación y la enseñanza, para así adaptarlas a disposición de cada alumno. Entendemos que el proceso de aprendizaje puede variar en cada situación personal y queremos conseguir que en cada una de estas, nuestros clientes disfruten de dicho proceso.</p>
         </div>
 
@@ -155,6 +155,7 @@ const Container = styled.div`
         text-align: start;
         background: #fff8b1a1;
         padding: 20px;
+        font-size: 20px;
         border-radius: 20px;
         -webkit-box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
 -moz-box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
@@ -165,7 +166,8 @@ box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
        background: #fff8b1a8;
         padding: 20px;
         border-radius: 20px;
-        width: 28%;
+        width: 40%;
+        font-size: 40px;
         -webkit-box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
 -moz-box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
 box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
@@ -175,7 +177,7 @@ box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
     .quienesButton{
       position: absolute;
       z-index: 1;
-      top: 65%;
+      top: 75%;
       text-decoration: none;
       color: black;
       padding: 10px;
