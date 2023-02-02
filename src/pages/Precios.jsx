@@ -1,21 +1,24 @@
 import React from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import stars from '../assets/stars.png'
 function Precios() {
   return (
     <Container>
+      <h1 className='title'>Tarifas y horarios</h1>
+      <a className='horarioButton' href="#horarios">Ir a horarios</a>
       <div className='tableContainer'>
         <div className='discountContainer'>
-          <p className='discounts disc1'>
+          <p data-aos="fade-right" data-aos-duration="1500" className='discounts disc1'>
             ¡VEN Y PRUEBA! <br />
             1º DÍA GRATIS
           </p>
-          <p className='discounts disc2'>
-            ¡10% DE DESCUETO <br />
+          <p data-aos="fade-left" data-aos-duration="1500" className='discounts disc2'>
+            ¡10% DE DESCUENTO <br />
             AL TRAER A UN AMIGO!
           </p>
         </div>
-        <table cellSpacing={20}>
+        <table data-aos="fade-up" data-aos-duration="2000" cellSpacing={20}>
           <tr>
             <th><h2>Tarifas</h2></th>
             <th><h2>Precios</h2></th>
@@ -53,19 +56,37 @@ function Precios() {
           </tr>
         </table>
         <div className='lastParagraph'>
-          <p>TARIFAS ECONÓMICAS; <br />PRECIOS AJUSTADOS AL PLAN DE TRABAJO DE CADA ALUMNO; <br />GRAN VARIEDAD DE DESCUENTOS, ¡INFÓRMATE Y NOS ADAPTARMEOS A TI!</p>
+          <p>TARIFAS ECONÓMICAS; <br />PRECIOS AJUSTADOS AL PLAN DE TRABAJO DE CADA ALUMNO; <br />GRAN VARIEDAD DE DESCUENTOS, ¡INFÓRMATE Y NOS ADAPTAREMOS A TI!</p>
           <Link to={'/contacto'}>Contacta</Link>
         </div>
+      </div>
+      <div id='horarios'>
+          <div className='horarioTitle'>
+            <h2>Horarios</h2>
+            <img src={stars} alt="" />
+          </div>
+          <div className='horariosContent'>
+            <h3>De Lunes a Viernes</h3>
+            <h3>10:00h - 14:00h</h3>
+            <p>Refuerzo para adultos</p>
+            <h3>16:00h - 20:30h</h3>
+            <p>Refuerzo primaria, E.S.O y bachillerato</p>
+            <h3>Consultar fines de semana y festivos</h3>
+          </div>
       </div>
     </Container>
   )
 }
 
 const Container = styled.div`
+.title{
+  margin-bottom: 80px;
+  font-size: 40px;
+}
 .tableContainer{
   width: 75%;
   margin: auto;
-  
+  margin-top: 100px;
 }
   table{
     margin: auto;
@@ -119,6 +140,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 100px;
     p{
       font-size: 20px;
       font-weight: bold;
@@ -137,6 +159,69 @@ const Container = styled.div`
         color: #5e5713;
       }
   }
+    .horarioButton{
+        text-decoration: none;
+        color: black;
+        padding: 10px 50px 10px 50px;
+        background: #e3e30f;
+        border-radius: 10px;
+        margin-right: 70%;
+      }
+      .horarioButton:hover{
+        background: #ffff3c;
+        transition: .2s ease;
+        color: #5e5713;
+      }
+      #horarios{
+        margin-top: 70px;
+       
+        width: 80%;
+        margin: auto;
+        .horarioTitle{
+          display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px 20px;
+        width: 30%;
+        margin: auto;
+        border-style: dashed solid;
+        border-bottom-style: none;
+        border-color: #00a2ff;
+        margin-bottom: 0;
+        background: #60e2ff1e;
+          h2{
+          color: #3ab4ff;
+          font-size: 35px;
+          padding-left: 60px;
+          padding-bottom: 0px;
+          border-bottom: 4px solid white;
+        }
+        img{
+          max-width: 70px;
+          max-height: 50px;
+          margin-top: 25px;
+        }
+        }
+
+        .horariosContent{
+          display: flex;
+          flex-direction: column;
+          background: #60e2ff5c;
+          border: 3px solid #00a2ff;
+          padding: 30px;
+          border-radius: 20px;
+          margin-top: 0;
+          margin-bottom: 50px;
+          h3{
+            font-size: 25px;
+          }
+          p{
+            font-size: 20px;
+          }
+        }
+       
+      }
  
 `
 

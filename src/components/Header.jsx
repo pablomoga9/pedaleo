@@ -36,8 +36,8 @@ function Header() {
               </li>
             </ul>
           </li>
-          <li>
-            <Link className='mainAnchors' to={"/tarifas-y-precios"}>Tarifas y precios</Link>
+          <li className='tarifas'>
+            <Link className='mainAnchors' to={"/tarifas-y-horarios"}>Tarifas y horarios</Link>
           </li>
           <li>
             <Link className='mainAnchors' to={"/periodico"}>Periódico</Link>

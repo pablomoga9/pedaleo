@@ -25,7 +25,7 @@ function Main() {
         <Route element={<Periodico/>} path={"/periodico"}/>
         <Route element={<Summer/>} path={"/escuela-de-verano"}/>
         <Route element={<Servicios/>} path={"/servicios"}/>
-        <Route element={<Precios/>} path={"/tarifas-y-precios"}/>
+        <Route element={<Precios/>} path={"/tarifas-y-horarios"}/>
         <Route element={<Matinal/>} path={"/aula-matinal"}/>
         <Route element={<Quienes/>} path={"/quienes-somos"}/>
         <Route element={<Que/>} path={"/que-ofrecemos"}/>
