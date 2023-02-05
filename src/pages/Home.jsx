@@ -32,7 +32,7 @@ function Home() {
       <div className='imageContainer'>
         <div className='imageText'>
           <h1 data-aos="fade-right" data-aos-duration="1500">¿Pedaleamos juntos?</h1>
-          <p data-aos="fade-left" data-aos-duration="1500">Pedaleo un centro socioeducativo de reciente formación que busca modernizar la educación y la enseñanza, para así adaptarlas a disposición de cada alumno. Entendemos que el proceso de aprendizaje puede variar en cada situación personal y queremos conseguir que en cada una de estas, nuestros clientes disfruten de dicho proceso.</p>
+          <p data-aos="fade-left" data-aos-duration="1500">Pedaleo es un centro socioeducativo de reciente formación que busca modernizar la educación y la enseñanza, para así adaptarlas a disposición de cada alumno. Entendemos que el proceso de aprendizaje puede variar en cada situación personal y queremos conseguir que en cada una de estas, nuestros clientes disfruten de dicho proceso.</p>
         </div>
 
         <Link className='quienesButton' to={'/quienes-somos'} >Conoce más</Link>
