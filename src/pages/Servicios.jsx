@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 function Servicios() {
   return (
@@ -51,6 +52,10 @@ function Servicios() {
           <p>
           Iremos incluyendo más tipos de servicios en forma de talleres ocasionales (educación emocional, educación sexual, uso responsable de las TIC, uso y adquisición de habilidades sociales…)
           </p>
+          <div className='contactUs'>
+            <h3>Para más información, contacta con nosotros:</h3>
+            <Link to={'/contacto'}>Contacto</Link>
+          </div>
         </div>
     </Container>
   )
@@ -159,6 +164,7 @@ box-shadow: 4px 7px 31px 4px rgba(107,156,179,1);
     -webkit-box-shadow: 4px 24px 31px -1px rgba(104,81,135,1);
 -moz-box-shadow: 4px 24px 31px -1px rgba(104,81,135,1);
 box-shadow: 4px 24px 31px -1px rgba(104,81,135,1);
+    
     p{
         width: 90%;
         background: #fff8b1f2;
@@ -169,6 +175,32 @@ box-shadow: 4px 24px 31px -1px rgba(104,81,135,1);
         -webkit-box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
         -moz-box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
         box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
+        margin-bottom: 40px;
+    }
+
+    .contactUs{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 70%;
+      margin: auto;
+      a{
+        
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        background: #e3e30f;
+        border-radius: 10px;
+        
+        margin: auto;
+        width: 30%;
+        -webkit-transition: border .5s ease;
+        }
+        a:hover{
+          border: 4px solid #ffff71;
+          transition: .2s ease;
+          color: #5e5713;
+        }
     }
   }
 
