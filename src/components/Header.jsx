@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
-import logo from '../assets/PandaGabri.png'
+import logo from '../assets/pedaleoLogo.png'
 
 function Header() {
   return (
@@ -29,10 +29,10 @@ function Header() {
                 <Link to={"/servicios"}>Servicios</Link>
               </li>
               <li>
-                <Link to={"/aula-matinal"}>{`Aula matinal (próximamente)`}</Link>
+                <Link className='disableLink' to={"/aula-matinal"}>{`Aula matinal (próximamente)`}</Link>
               </li>
               <li>
-                <Link to={"/escuela-de-verano"}>{`Escuela de verano (próximamente)`}</Link>
+                <Link  className='disableLink' to={"/escuela-de-verano"}>{`Escuela de verano (próximamente)`}</Link>
               </li>
             </ul>
           </li>
@@ -73,7 +73,14 @@ height: 140px;
     max-width: 200px;
     max-height: 200px;
     margin-left: 30px;
+    padding-top: 30px;
   }
+
+
+  .disableLink{
+    pointer-events: none;
+  }
+
   .nav{
     display: flex;
     justify-content: space-between;
@@ -97,7 +104,6 @@ height: 140px;
       padding: 10px 1.5rem;
       margin: auto;
       transition: background-color .22s ease, color .22s ease;
-      
     }
     
     p{

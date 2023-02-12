@@ -5,6 +5,7 @@ import equipo1 from '../assets/equipo1.jpeg';
 import equipo2 from '../assets/equipo2.jpg';
 import equipo3 from '../assets/equipo3.jpg';
 
+
 function Equipo() {
   return (
 
@@ -58,7 +59,11 @@ function Equipo() {
         </div>
         </div>
         <div className='podcast'>
-
+          <h2>
+            ¿Quieres conocernos algo mejor?
+          </h2>
+          <a href="https://open.spotify.com/show/4sPkmCS9KSeJvsQwPDwgVn?si=18d100af46be4397" target='_blank'><img className='icon' src="https://img.icons8.com/plasticine/100/null/spotify--v2.png"/></a>
+          <h3>Escucha nuestro programa de podcast 'Poscaleo'</h3>
         </div>
       </div>
     </Container>
@@ -178,6 +183,12 @@ box-shadow: 10px 3px 54px -6px rgba(201,190,74,0.76);
       }
     }
   }
+  }
+
+  .podcast{
+    img:hover{
+      filter: brightness(1.75);
+    }
   }
 `
 

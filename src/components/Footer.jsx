@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import logo from '../assets/PandaGabri.png'
+import logo from '../assets/pedaleoLogo.png'
 
 function Footer() {
   return (
