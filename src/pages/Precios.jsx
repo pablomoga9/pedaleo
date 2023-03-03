@@ -32,33 +32,33 @@ function Precios() {
             <th><h2>Detalles</h2></th>
           </tr>
           <tr className='interactuable'>
-            <td>Plan mensual intensivo {`(200€/32h)`}</td>
-            <td>50€/8h Semana</td>
+            <td>Plan mensual intensivo</td>
+            <td>Bachillerato: 50€/8h Semana <br />Primaria y ESO: 160€/32h</td>
             <td>Horarios adaptados a necesidades e intereses</td>
           </tr>
           <tr className='interactuable'>
-            <td>Plan mensual {'(112€/16h)'}</td>
-            <td>28€/4h Semana</td>
+            <td>Plan mensual</td>
+            <td>Bachillerato: 28€/4h Semana <br />Primaria y ESO: 96€/16h</td>
             <td>Horarios adaptados a necesidades e intereses</td>
           </tr>
           <tr className='interactuable'>
-            <td>Plan media jornada {'(64€/8h)'}</td>
-            <td>16€/2h Semana</td>
+            <td>Plan media jornada</td>
+            <td>Bachillerato: 16€/2h Semana <br />Primaria y ESO: 52€/8h</td>
             <td>Horarios adaptados a necesidades e intereses</td>
           </tr>
           <tr className='interactuable'>
             <td>Plan online</td>
-            <td>10€/h</td>
+            <td>Bachillerato: 10€/h<br />Primaria y ESO: 8€/h</td>
             <td>Posibilidad de adaptar las tarifas de manera virtual</td>
           </tr>
           <tr className='interactuable'>
             <td>Días laborables</td>
-            <td>12€/h</td>
+            <td>Bachillerato: 12€/h<br />Primaria y ESO: 10€/h</td>
             <td>Se aplica con un mínimo de 2 horas al día</td>
           </tr>
           <tr className='interactuable'>
             <td>Días festivos y fines de semanas</td>
-            <td>15€/h</td>
+            <td>Bachillerato: 15€/h<br />Primaria y ESO: 12€/h</td>
             <td>Se aplica con un mínimo de 2 horas al día</td>
           </tr>
         </table>
